@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Руфина Измайлова — Таролог, Коуч, Мастер Рейки, Тета практик. Исцеляю и вдохновляю через таро расклады.">
+    <title>Руфина Измайлова | Таролог • Коуч • Целитель </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="flower-bg-container">
+        <svg viewBox="0 0 500 500" fill="none" stroke="currentColor" stroke-width="1"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.4">
+                <!-- Center -->
+                <circle cx="250" cy="250" r="50" />
+                <!-- Ring 1 -->
+                <circle cx="300" cy="250" r="50" />
+                <circle cx="275" cy="293.3" r="50" />
+                <circle cx="225" cy="293.3" r="50" />
+                <circle cx="200" cy="250" r="50" />
+                <circle cx="225" cy="206.7" r="50" />
+                <circle cx="275" cy="206.7" r="50" />
+                <!-- Ring 2 -->
+                <circle cx="350" cy="250" r="50" />
+                <circle cx="325" cy="293.3" r="50" />
+                <circle cx="325" cy="206.7" r="50" />
+                <circle cx="150" cy="250" r="50" />
+                <circle cx="175" cy="293.3" r="50" />
+                <circle cx="175" cy="206.7" r="50" />
+                <circle cx="250" cy="336.6" r="50" />
+                <circle cx="300" cy="336.6" r="50" />
+                <circle cx="200" cy="336.6" r="50" />
+                <circle cx="250" cy="163.4" r="50" />
+                <circle cx="300" cy="163.4" r="50" />
+                <circle cx="200" cy="163.4" r="50" />
+            </g>
+            <!-- Outer Circle -->
+            <circle cx="250" cy="250" r="150" stroke-width="2" opacity="0.6" />
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Руфина Измайлова</div>
+        <ul class="nav-links">
+            <li class="active" data-tab="home">Главная</li>
+            <li data-tab="about">Обо мне</li>
+            <li data-tab="achievements">Мои достижения</li>
+            <li data-tab="price">Услуги</li>
+            <li data-tab="reviews">Отзывы</li>
+            <li data-tab="contact">Контакты</li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="content">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="fade-in">Руфина Измайлова</h1>
+                    <p class="subtitle fade-in-delay">Таролог • Коуч • Мастер Рейки • Тета практик</p>
+                    <p class="tagline fade-in-delay-2">Пространство доверия, любви и принятия</p>
+                    <button class="cta-btn fade-in-delay-3" onclick="switchTab('price')">Записаться на расклад</button>
+                </div>
+                <div class="hero-image-container fade-in-right">
+                    <img src="assets/photos/hero.jpg" alt="Руфина Измайлова" class="hero-img">
+                </div>
+            </div>
+            <!-- particles removed from here -->
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="tab-content">
+            <div class="container">
+                <h2 class="section-title fade-in">Обо мне</h2>
+                <div class="about-grid">
+                    <div class="about-img-wrapper fade-in">
+                        <img src="assets/photos/about.jpg" alt="Руфина" class="about-img">
+                        <div class="energy-glow"></div>
+                    </div>
+                    <div class="about-text fade-in-delay">
+                        <h3>Исцеляю через любовь и осознание</h3>
+                        <p>Приветствую вас в моём пространстве! Я — Руфина, проводник в мир яснознания и гармонии.</p>
+                        <p>Моя миссия — помочь вам исцелить кармические связи, убрать энергетические привязки и вновь
+                            влюбиться в жизнь. В своих сеансах я использую не только мудрость <strong>Таро</strong>, но
+                            и целительную энергию <strong>Рейки</strong> и <strong>Тета-хилинга</strong>.</p>
+                        <p>Я верю, что 50% исцеления происходит уже в момент осознания причины проблемы. Остальные 50%
+                            мы прорабатываем энергетически, наполняя вас ресурсом и уверенностью.</p>
+                        <div class="philosophy-box">
+                            <i class="fas fa-star custom-icon"></i>
+                            <p>«Даже если в твоей жизни что-то "не так", знай с тобой уже всё в порядке!»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="tab-content">
+            <div class="container">
+                <h2 class="section-title fade-in">Мои достижения</h2>
+                <p class="section-desc fade-in-delay">Постоянное развитие — путь к мастерству</p>
+
+
+                <div class="certs-grid">
+                    <!-- Certificate 1 -->
+                    <div class="cert-card">
+                        <div class="cert-preview">
+                            <iframe src="assets/certs/certificate (1).pdf#toolbar=0" width="100%" height="250px"
+                                style="border: none;"></iframe>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Сертификат ThetaHealing</h4>
+                            <a href="assets/certs/certificate (1).pdf" target="_blank" class="download-link"><i
+                                    class="fas fa-eye"></i> Открыть PDF</a>
+                            <br>
+                            <a href="https://www.thetahealing.com/" target="_blank" class="review-link"
+                                style="margin-top: 5px; font-size: 0.8rem;"><i class="fas fa-check-circle"></i>
+                                Проверить на сайте</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="cert-card">
+                        <div class="cert-preview">
+                            <iframe src="assets/certs/certificate (2).pdf#toolbar=0" width="100%" height="250px"
+                                style="border: none;"></iframe>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Сертификат ThetaHealing</h4>
+                            <a href="assets/certs/certificate (2).pdf" target="_blank" class="download-link"><i
+                                    class="fas fa-eye"></i> Открыть PDF</a>
+                            <br>
+                            <a href="https://www.thetahealing.com/" target="_blank" class="review-link"
+                                style="margin-top: 5px; font-size: 0.8rem;"><i class="fas fa-check-circle"></i>
+                                Проверить на сайте</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="cert-card">
+                        <div class="cert-preview">
+                            <iframe src="assets/certs/certificate (3).pdf#toolbar=0" width="100%" height="250px"
+                                style="border: none;"></iframe>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Сертификат ThetaHealing</h4>
+                            <a href="assets/certs/certificate (3).pdf" target="_blank" class="download-link"><i
+                                    class="fas fa-eye"></i> Открыть PDF</a>
+                            <br>
+                            <a href="https://www.thetahealing.com/" target="_blank" class="review-link"
+                                style="margin-top: 5px; font-size: 0.8rem;"><i class="fas fa-check-circle"></i>
+                                Проверить на сайте</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="cert-card">
+                        <div class="cert-preview">
+                            <iframe src="assets/certs/certificate (4).pdf#toolbar=0" width="100%" height="250px"
+                                style="border: none;"></iframe>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Сертификат ThetaHealing</h4>
+                            <a href="assets/certs/certificate (4).pdf" target="_blank" class="download-link"><i
+                                    class="fas fa-eye"></i> Открыть PDF</a>
+                            <br>
+                            <a href="https://www.thetahealing.com/" target="_blank" class="review-link"
+                                style="margin-top: 5px; font-size: 0.8rem;"><i class="fas fa-check-circle"></i>
+                                Проверить на сайте</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5 -->
+                    <div class="cert-card">
+                        <div class="cert-preview">
+                            <iframe src="assets/certs/certificate (5).pdf#toolbar=0" width="100%" height="250px"
+                                style="border: none;"></iframe>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Сертификат ThetaHealing</h4>
+                            <a href="assets/certs/certificate (5).pdf" target="_blank" class="download-link"><i
+                                    class="fas fa-eye"></i> Открыть PDF</a>
+                            <br>
+                            <a href="https://www.thetahealing.com/" target="_blank" class="review-link"
+                                style="margin-top: 5px; font-size: 0.8rem;"><i class="fas fa-check-circle"></i>
+                                Проверить на сайте</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 6 -->
+                    <div class="cert-card">
+                        <div class="cert-preview">
+                            <iframe src="assets/certs/certificate (6).pdf#toolbar=0" width="100%" height="250px"
+                                style="border: none;"></iframe>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Сертификат ThetaHealing</h4>
+                            <a href="assets/certs/certificate (6).pdf" target="_blank" class="download-link"><i
+                                    class="fas fa-eye"></i> Открыть PDF</a>
+                            <br>
+                            <a href="https://www.thetahealing.com/" target="_blank" class="review-link"
+                                style="margin-top: 5px; font-size: 0.8rem;"><i class="fas fa-check-circle"></i>
+                                Проверить на сайте</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 7 -->
+                    <div class="cert-card">
+                        <div class="cert-preview">
+                            <iframe src="assets/certs/certificate (7).pdf#toolbar=0" width="100%" height="250px"
+                                style="border: none;"></iframe>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Сертификат ThetaHealing</h4>
+                            <a href="assets/certs/certificate (7).pdf" target="_blank" class="download-link"><i
+                                    class="fas fa-eye"></i> Открыть PDF</a>
+                            <br>
+                            <a href="https://www.thetahealing.com/" target="_blank" class="review-link"
+                                style="margin-top: 5px; font-size: 0.8rem;"><i class="fas fa-check-circle"></i>
+                                Проверить на сайте</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements-stats">
+                    <div class="stat-item">
+                        <span class="count">2000+</span>
+                        <span class="label">Раскладов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="count">27500+</span>
+                        <span class="label">Подписчиков (Всего)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="count">∞</span>
+                        <span class="label">Любви</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICE SECTION (Marketplace Style) -->
+        <section id="price" class="tab-content">
+            <div class="container">
+                <h2 class="section-title fade-in">Услуги и Прайс</h2>
+                <div class="marketplace-grid">
+
+                    <!-- Item 1: Express (1800) -->
+                    <div class="market-card">
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                            <h3>Экспресс-расклад</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">Ответ на 1 конкретный вопрос. Развернутое голосовое сообщение.</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Без "да/нет", глубокий ответ</li>
+                                <li><i class="fas fa-check"></i> Доп. вопросы от мастера</li>
+                            </ul>
+                            <div class="price">1 800 ₽</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/Rufina_izmailova" target="_blank" class="buy-btn">
+                                <i class="fab fa-telegram-plane"></i> Записаться
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Problem Solution (3000) -->
+                    <div class="market-card">
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-puzzle-piece"></i></div>
+                            <h3>Расклад "Решение проблемы"</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">В чем проблема, её решение и результат. Четкий алгоритм действий.</p>
+                            <div class="price">3 000 ₽</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/Rufina_izmailova" target="_blank" class="buy-btn">
+                                <i class="fab fa-telegram-plane"></i> Записаться
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Tarot 30 min (4900) -->
+                    <div class="market-card">
+                        <div class="card-header">
+                            <div class="icon-box"><i class="far fa-clock"></i></div>
+                            <h3>Таро консультация (30 мин)</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">Экспресс-разбор текущей ситуации или одного сложного вопроса.</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Видео / Аудио формат</li>
+                                <li><i class="fas fa-check"></i> Ответы на вопросы</li>
+                            </ul>
+                            <div class="price">4 900 ₽</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/Rufina_izmailova" target="_blank" class="buy-btn">
+                                <i class="fab fa-telegram-plane"></i> Записаться
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Coach (5000) -->
+                    <div class="market-card">
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-comments"></i></div>
+                            <h3>Коуч-сессия</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">Работа со страхами, обидами, гневом, виной. Трансформация негативных
+                                эмоций.</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Эмоциональная свобода</li>
+                                <li><i class="fas fa-check"></i> Личная беседа</li>
+                            </ul>
+                            <div class="price">5 000 ₽</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/Rufina_izmailova" target="_blank" class="buy-btn">
+                                <i class="fab fa-telegram-plane"></i> Записаться
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Tarot 45 min (6000) -->
+                    <div class="market-card">
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-hourglass-half"></i></div>
+                            <h3>Таро консультация (45 мин)</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">Оптимальный формат для разбора конкретной сферы жизни.</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Видео / Аудио формат</li>
+                                <li><i class="fas fa-check"></i> Быстро и по сути</li>
+                            </ul>
+                            <div class="price">6 000 ₽</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/Rufina_izmailova" target="_blank" class="buy-btn">
+                                <i class="fab fa-telegram-plane"></i> Записаться
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Consultation + Healing (7000) -->
+                    <div class="market-card">
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-hand-holding-heart"></i></div>
+                            <h3>Консультация + Исцеление</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">Работа с подсознанием, исцеление страхов, гармонизация ситуации в
+                                потоке Рэйки.</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Длительность: 1.5 часа</li>
+                                <li><i class="fas fa-check"></i> Глубинная проработка</li>
+                            </ul>
+                            <div class="price">7 000 ₽</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/Rufina_izmailova" target="_blank" class="buy-btn">
+                                <i class="fab fa-telegram-plane"></i> Записаться
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Tarot 1h (7000) - Popular -->
+                    <div class="market-card popular">
+                        <div class="badge">Популярное</div>
+                        <div class="card-header">
+                            <div class="icon-box"><i class="fas fa-star"></i></div>
+                            <h3>Таро консультация (1 час)</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="description">Полный разбор вашей ситуации. Ответы на любые вопросы.</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Видео / Аудио формат</li>
+                                <li><i class="fas fa-check"></i> Любое кол-во вопросов</li>
+                            </ul>
+                            <div class="price">7 000 ₽</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/Rufina_izmailova" target="_blank" class="buy-btn">
+                                <i class="fab fa-telegram-plane"></i> Записаться
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS SECTION -->
+        <section id="reviews" class="tab-content">
+            <div class="container">
+                <h2 class="section-title fade-in">Отзывы</h2>
+                <div class="reviews-masonry">
+
+                    <!-- Review 1 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Благодарю Руфину за деликатное и тонкое попадание в самую суть трудностей
+                            в отношениях у меня. Умение мудро подвести все связи и причины - вот что удивляет
+                            по-настоящему. Слушала открыв рот и не перестаю удивляться этому чудесному инструменту и
+                            Мастеру с большой буквы Руфине! Я узнала о себе то, в чем годами боялась признаться самой
+                            себе.</p>
+                        <div class="review-meta">
+                            <span class="author">Людмила Шелим</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=440" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Руфина, я вам очень благодарна за расклад. Вы всё очень доступно
+                            объяснили. Теперь у меня на многое открылись глаза. Когда я обращалась к вам до этого, всё
+                            получилось так как вы сказали, я вообще удивлена. И ещё хотелось бы добавить, что ваши
+                            расклады действительно обладают исцеляющей силой.</p>
+                        <div class="review-meta">
+                            <span class="author">Оксана Кротова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=311" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Благодарю Руфину за расклад на отношения в паре! Я получила ответы на
+                            свои вопросы в доступной развернутой форме, много осознала после расклада и осознания
+                            приходят даже спустя время. Руфина - мастер своего дела. Советую всем, кто сомневается!</p>
+                        <div class="review-meta">
+                            <span class="author">Юлия Киршова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=315" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Расклад у Руфины я выиграла - да, да, это реально! Не сразу мне
+                            понравилось то, что я услышала, но в процессе общения поняла, что да, за моим первичным
+                            неприятием огромный страх. Страх увидеть свои страхи, но именно их осознание это первый шаг
+                            к решению. Благодарю!</p>
+                        <div class="review-meta">
+                            <span class="author">Мария Ксенафонтова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=312" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Очень благодарна Руфине за расклад. Всё подробно объяснила и расписала.
+                            Очень удивлена, насколько Руфина точна! Ничего лишнего, все по делу. Очень полезная и нужная
+                            информация есть над чем задуматься. У этого человека, действительно, большой талант.</p>
+                        <div class="review-meta">
+                            <span class="author">Эльвира Капустина</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=264" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Обращаюсь к Руфине не первый раз за раскладами. Сегодня обратилась за
+                            сессией про страхи, и знаете мне это понравилось. Поработав с этим мастером, я осознала свой
+                            страх и поменяла мысли на счет него. Вообще очень хороший мастер, здоровья вам и терпения!
+                        </p>
+                        <div class="review-meta">
+                            <span class="author">Ольга Сурина</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=316" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 7 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Расклад Руфины мне очень понравился, помог наконец-то разобраться в своих
+                            чувствах, сомнениях. Думаю, после этого я сделаю правильный выбор. Стало даже легче на душе.
+                            Благодарю!</p>
+                        <div class="review-meta">
+                            <span class="author">Анастасия Барсукова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=314" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 8 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Обратилась к Руфине за таронумерологическим портретом. Очень быстро мне
+                            посмотрела и отправила аудиозаписи. Это так удобно, теперь я могу прослушивать в любой
+                            момент. Руфина мастер своего дела, объяснила в доступной форме, конкретно и очень много
+                            информации.</p>
+                        <div class="review-meta">
+                            <span class="author">Maria Astrofenix</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=261" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 9 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Выражаю огромную благодарность Руфине за таронумерологический портрет. В
+                            каждом слове узнавала себя. Получила информацию о своих талантах, миссии и предназначении.
+                            Информация дала пищу для рефлексии. Очень круто, очень понравилось, очень подробно и
+                            интересно.</p>
+                        <div class="review-meta">
+                            <span class="author">Юлия Королькова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=262" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 10 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Огромное спасибо Руфине, выиграла полный расклад на таро. Все ясно и
+                            подробно объяснила, в чем моя проблема и как её решить. Рассеяла все мои сомнения и
+                            подтвердила мои догадки. Спасибо за такой подробный расклад, здоровье вам и процветания!</p>
+                        <div class="review-meta">
+                            <span class="author">Наталья Ната</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=263" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+                    <!-- Review 11 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Благодарю за расклад! Все очень точно, до мурашек. Руфина очень чуткий и
+                            внимательный мастер.</p>
+                        <div class="review-meta">
+                            <span class="author">Анонимный отзыв</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183" target="_blank" class="review-link"><i
+                                class="fab fa-vk"></i> Читать все отзывы</a>
+                    </div>
+
+                    <!-- Review 12 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Благодарю за расклад, нетривиальное видение ситуации и людей))) Очень
+                            обширный и развёрнутый расклад, весьма открыто и доступно. Всем рекомендую обращаться к
+                            Руфине.</p>
+                        <div class="review-meta">
+                            <span class="author">Варвара Левченко</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=109" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 13 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Руфина буквально с первых слов описала суть ситуации и внутренний мотив
+                            человека... Это просто вау! Точно обращусь ещё раз за раскладом для себя и посоветую
+                            подругам! Развития вам вашей группы и процветания 🌷🌸☀️</p>
+                        <div class="review-meta">
+                            <span class="author">Анна Мартынова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=111" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 14 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Спасибо за расклад буду действовать вашим советам!!! Все понятно и
+                            доступно</p>
+                        <div class="review-meta">
+                            <span class="author">Екатерина Лунина</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=112" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 15 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Руфина,большое спасибо за столь точный расклад!!!!И тем более за душевный
+                            разговор после и советы .Вы делаете очень доброе дело.Всех благ</p>
+                        <div class="review-meta">
+                            <span class="author">Julia Vizniuk</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=114" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 16 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Спасибо за просмотр ситуации , все подробно , корректно !!!🌷</p>
+                        <div class="review-meta">
+                            <span class="author">Иза Бельц</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=115" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 17 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Спасибо большое за ответ на мой вопрос. Сбылось то, что вы говорили</p>
+                        <div class="review-meta">
+                            <span class="author">Татьяна Алексеева</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=116" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 18 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Спасибо Вам за подробный ответ на мой вопрос😊</p>
+                        <div class="review-meta">
+                            <span class="author">Анастасия Прохорова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=120" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 19 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Благодарю 🙏 🙏 🙏</p>
+                        <div class="review-meta">
+                            <span class="author">Дина Шевкунова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=187" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 20 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Руфина, благодарю 🍀🌺😘 за помощь и понимание</p>
+                        <div class="review-meta">
+                            <span class="author">Лина Закирова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=189" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 21 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Спасибо большое за совет ❤️</p>
+                        <div class="review-meta">
+                            <span class="author">Анна Андреевна</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=190" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 22 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Благодарю за расклад, довольно чётко и верно подмечены ключевые моменты
+                            по теме расклада. Удивительно 😳🙏</p>
+                        <div class="review-meta">
+                            <span class="author">Татьяна Коновалова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=191" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 23 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">БлагоДарю за возможность осуществления планов и жизненных задач в
+                            комфортной для меня ситуации 👏👏👏 Благие вести - к Благу несущему их🙏🙏🙏</p>
+                        <div class="review-meta">
+                            <span class="author">Alex Argo</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=192" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 24 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Благодарю Руфина, за расклад, всё было верно сказано, благодарю за
+                            помощь, за совет. Вы очень душевный человек❤️</p>
+                        <div class="review-meta">
+                            <span class="author">Оксана Шиховцова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=193" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                    <!-- Review 25 -->
+                    <div class="review-text-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="review-text">Спасибо огромное четкий правдивый расклад мне очень понравилось
+                            😁😁😁❤️❤️❤️❤️😘</p>
+                        <div class="review-meta">
+                            <span class="author">Анна Никифорова</span>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                        <a href="https://vk.com/topic-172631170_39567183?post=195" target="_blank"
+                            class="review-link"><i class="fab fa-vk"></i> Читать оригинал</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="tab-content">
+            <div class="container centered">
+                <h2 class="section-title fade-in">Связаться со мной</h2>
+                <p class="section-desc fade-in-delay">Я всегда открыта для общения и ваших вопросов</p>
+
+                <div class="social-links">
+                    <a href="https://t.me/Rufina_izmailova" target="_blank" class="social-btn telegram">
+                        <i class="fab fa-telegram-plane"></i> Telegram
+                    </a>
+                    <a href="https://www.youtube.com/@Rufina_Izmailova/featured" target="_blank"
+                        class="social-btn youtube">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                    <a href="https://instagram.com/izmailova_rufina" target="_blank" class="social-btn instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://vk.com/rufinataro" target="_blank" class="social-btn vk">
+                        <i class="fab fa-vk"></i> ВКонтакте
+                    </a>
+                </div>
+
+                <div class="contact-footer">
+                    <p>&copy; 2026 Руфина Измайлова. Все права защищены.</p>
+                    <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">* Организация Meta (Instagram и
+                        Facebook) признана экстремистской и запрещена на территории РФ.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="particles" id="particles-js"></div>
+    <script src="assets/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
