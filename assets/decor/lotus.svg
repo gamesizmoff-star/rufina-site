@@ -1,0 +1,73 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="strong-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .petal {
+      fill: url(#glow);
+      stroke: #D4AF37;
+      stroke-width: 1.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transform-origin: 50px 80px;
+      animation: draw 2s ease-out forwards, breathe 6s ease-in-out 2s infinite alternate;
+      stroke-dasharray: 200;
+      stroke-dashoffset: 200;
+      opacity: 0;
+    }
+    .petal-center { animation-delay: 0s, 0s; fill: url(#strong-glow); }
+    .petal-left-1 { animation-delay: 0.2s, -1s; }
+    .petal-right-1 { animation-delay: 0.4s, -1.5s; }
+    .petal-left-2 { animation-delay: 0.6s, -2s; fill: none; }
+    .petal-right-2 { animation-delay: 0.8s, -2.5s; fill: none; }
+    .bottom-leaf { animation-delay: 1s, 0s; fill: none; stroke-width: 1; }
+    
+    .glow-circle {
+      animation: pulse 4s ease-in-out infinite alternate;
+      transform-origin: 50px 60px;
+    }
+    
+    @keyframes draw {
+      to { stroke-dashoffset: 0; opacity: 1; }
+    }
+    @keyframes breathe {
+      0% { transform: scale(0.98) rotate(-1deg); stroke: rgba(212, 175, 55, 0.7); opacity: 0.8;}
+      100% { transform: scale(1.02) rotate(1deg); stroke: rgba(212, 175, 55, 1); opacity: 1;}
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.8); opacity: 0.4; }
+      100% { transform: scale(1.2); opacity: 1; }
+    }
+  </style>
+
+  <g transform="translate(0, -5)">
+    <!-- subtle background glow -->
+    <circle cx="50" cy="60" r="25" fill="url(#glow)" class="glow-circle" />
+
+    <!-- Outer left petal -->
+    <path class="petal petal-left-2" d="M 50 80 C 25 80, 5 65, 10 45 C 20 60, 35 75, 50 80 Z" />
+    <!-- Outer right petal -->
+    <path class="petal petal-right-2" d="M 50 80 C 75 80, 95 65, 90 45 C 80 60, 65 75, 50 80 Z" />
+    
+    <!-- Inner left petal -->
+    <path class="petal petal-left-1" d="M 50 80 C 35 75, 20 55, 25 30 C 35 45, 45 65, 50 80 Z" />
+    <!-- Inner right petal -->
+    <path class="petal petal-right-1" d="M 50 80 C 65 75, 80 55, 75 30 C 65 45, 55 65, 50 80 Z" />
+
+    <!-- Center petal -->
+    <path class="petal petal-center" d="M 50 80 C 40 70, 35 40, 50 15 C 65 40, 60 70, 50 80 Z" />
+
+    <!-- Bottom details -->
+    <path class="petal bottom-leaf" d="M 40 82 C 30 85, 25 88, 20 90 C 35 90, 45 85, 50 83 C 55 85, 65 90, 80 90 C 75 88, 70 85, 60 82" />
+    
+    <!-- Tiny center diamond / seed -->
+    <path class="petal" style="animation-delay: 1.2s, 0s; fill: #D4AF37; stroke: none;" d="M 50 73 L 48 76 L 50 79 L 52 76 Z" />
+  </g>
+</svg>
